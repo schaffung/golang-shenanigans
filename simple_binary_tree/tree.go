@@ -2,12 +2,11 @@ package main
 
 import "fmt"
 
-type tree struct{
-	value int
-	leftC *tree
+type tree struct {
+	value  int
+	leftC  *tree
 	rightC *tree
 }
-
 
 func addValueToTree(value int, treeNode **tree) {
 	if *treeNode == nil {
@@ -34,7 +33,7 @@ func preOrderTraversal(treeNode *tree) {
 	return
 }
 
-func main(){
+func main() {
 	var rootNode *tree
 	addValueToTree(1, &rootNode)
 	addValueToTree(2, &rootNode)
