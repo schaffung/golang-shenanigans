@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package reverseInt
 
 func reverse(s []int) {
 	// Just takes int values
@@ -8,14 +6,4 @@ func reverse(s []int) {
 	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
 		s[i], s[j] = s[j], s[i]
 	}
-}
-
-func main() {
-	// just a slice...
-	i := []int{1, 2, 3, 4}
-
-	// reversing the slice...
-	reverse(i)
-
-	fmt.Println("So the result of this reverse operations is : ", i)
 }
